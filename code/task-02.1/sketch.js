@@ -7,14 +7,14 @@ function setup() {
 
 function draw() {
       noLoop();
-      background(200);
+      background(random(100,255));
       
       noFill();
       stroke("black");
     
       let radius = 200;
        
-      let maxCount = 20;
+      let maxCount = random(15,30);
       for (let circleCount = 0; circleCount < maxCount; circleCount += 1) {
         let theta = (Math.PI / 180) * (360 / maxCount * circleCount + 90);
     
