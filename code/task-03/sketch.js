@@ -3,6 +3,7 @@ const sketchHeight = 400;
 const numPoints = 30;
 const velocity = 2;
 const points = [];
+
 for (let p = 0; p < numPoints; p += 1) {
   points.push([
     Math.random() * sketchWidth, // x
