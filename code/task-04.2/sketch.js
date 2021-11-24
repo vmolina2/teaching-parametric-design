@@ -8,22 +8,22 @@ function setup() {
 function draw() {   
       
       noLoop();
-      background(0);
+      background(255);
 
-      fill(255)
-      strokeWeight(2);
+      fill(0)
+      strokeWeight(0);
       stroke("black")
       circle(sketchHeight/2, sketchWidth/2, sketchHeight);
       
      
-      stroke("black");
+      stroke("any");
 
       let radius = 200;
        
       let maxCount = 6;
       for (let circleCount = 0; circleCount < maxCount; circleCount += 1) {
         let theta = (Math.PI / 180) * (360 / maxCount * circleCount + 90);
-        fill(random(200))
+        fill(random(100,255))
     
         let x = radius / 2 * cos(theta);
         let y = radius / 2 * sin(theta);
