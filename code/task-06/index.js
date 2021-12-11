@@ -11,7 +11,7 @@ const main = () => {
   ];
 
   return allPrimitives.map((primitive, index) => {
-    return translate([(index % 4 - 2) * 6, Math.floor(index / 4 - 2) * 6, 0], primitive)
+    return translate([(index % 4 - 2) * 6, Math.floor(index / 4 - 2) * 6, 0], primitive) // test
   });
 };
 
