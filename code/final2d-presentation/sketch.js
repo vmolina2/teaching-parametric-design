@@ -2,7 +2,7 @@ const sketchHeight = 400;
 const sketchWidth = 400;
 
 function setup() {
-        createCanvas(sketchHeight, sketchWidth);
+        createCanvas(sketchHeight, sketchWidth,SVG);
 }
 
 
@@ -11,7 +11,7 @@ function draw() {
   background(255);
       
       noFill();
-      stroke("black");
+      stroke((random(0, 255), random (0, 255), random (255, 0)));
     
       let radius = 400;
       let maxCount = random(15,30);
@@ -160,6 +160,7 @@ function draw() {
                              sketchHeight/2,
                              sketchWidth/2,
                              random(2,400));
+                             nosave()
 }
 
 function mousePressed() {
