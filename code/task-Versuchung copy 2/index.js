@@ -15,9 +15,12 @@ const {
   scission
 } = jscad.booleans;
 
-const size = 40;
+const size = 20;
 
 const main = () => {
+  const sphereShape = sphere({
+    size: size * 3
+  });
   const sphereShape = sphere({
     radius: size,
     center: [size, size, size]
